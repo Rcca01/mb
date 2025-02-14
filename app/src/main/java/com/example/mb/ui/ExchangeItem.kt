@@ -9,22 +9,23 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
+import androidx.compose.ui.res.stringResource
+import com.example.mb.R
 import com.example.mb.data.model.ExchangeDataEntity
-
+import com.example.mb.ui.theme.Dimens
 
 @Composable
 fun ExchangeItem(exchange: ExchangeDataEntity) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(8.dp),
+            .padding(Dimens.SmallPadding),
         elevation = CardDefaults.cardElevation()
     ) {
-        Column(modifier = Modifier.padding(16.dp)) {
+        Column(modifier = Modifier.padding(Dimens.MediumPadding)) {
             Text(text = exchange.name, style = MaterialTheme.typography.headlineSmall)
-            Text(text = "ID: ${exchange.exchangeId}")
-            Text(text = "Volume 1 day USD: ${exchange.volume1DayUsd}")
+            Text(text = stringResource(R.string.id, exchange.exchangeId))
+            Text(text = stringResource(R.string.volume_1_day_usd, exchange.volume1DayUsd))
         }
     }
 }

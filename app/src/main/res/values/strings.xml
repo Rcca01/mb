@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">MB</string>
+    <string name="lista_de_exchanges">Lista de Exchanges</string>
+    <string name="id">ID: %1$s</string>
+    <string name="volume_1_day_usd">Volume 1 day USD: %1$s</string>
 </resources>

@@ -13,6 +13,8 @@ import androidx.compose.runtime.livedata.observeAsState
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import com.example.mb.R
 import com.example.mb.viewmodel.ExchangeViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -26,7 +28,7 @@ fun ExchangeScreen(viewModel: ExchangeViewModel = viewModel()) {
 
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text("Lista de Exchanges") })
+            TopAppBar(title = { Text(stringResource(R.string.lista_de_exchanges)) })
         }
     ) { padding ->
         if (exchanges.isEmpty()) {
