@@ -38,7 +38,7 @@ MB-APP é um aplicativo Android desenvolvido com **Jetpack Compose**, seguindo a
 
 1. Clone este repositório:
    ```sh
-   git clone https://github.com/seu-usuario/ExchangeApp.git
+   git clone https://github.com/Rcca01/mb.git
    ```
 2. Abra o projeto no **Android Studio**
 3. Adicione a chave da API da **CoinAPI.io** no arquivo `local.properties`:
