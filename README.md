@@ -24,7 +24,6 @@ MB-APP é um aplicativo Android desenvolvido com **Jetpack Compose**, seguindo a
 
 ### 🔹 **Consumo de API**
 - **Retrofit** – Cliente HTTP para comunicação com a CoinAPI.io
-- **Moshi** – Biblioteca para serialização/deserialização de JSON
 
 ### 🔹 **Gerenciamento de Configurações**
 - **Gradle Secrets (local.properties)** – Para armazenar a chave da API de forma segura
