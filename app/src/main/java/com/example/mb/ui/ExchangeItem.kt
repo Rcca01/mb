@@ -1,5 +1,6 @@
 package com.example.mb.ui
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -15,11 +16,12 @@ import com.example.mb.data.model.ExchangeDataEntity
 import com.example.mb.ui.theme.Dimens
 
 @Composable
-fun ExchangeItem(exchange: ExchangeDataEntity) {
+fun ExchangeItem(exchange: ExchangeDataEntity, onClick: () -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(Dimens.SmallPadding),
+            .padding(Dimens.SmallPadding)
+            .clickable { onClick() },
         elevation = CardDefaults.cardElevation()
     ) {
         Column(modifier = Modifier.padding(Dimens.MediumPadding)) {

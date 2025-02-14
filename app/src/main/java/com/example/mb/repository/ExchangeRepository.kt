@@ -13,4 +13,9 @@ class ExchangeRepository @Inject constructor(
             it.mapToEntity()
         }
     }
+
+    suspend fun getDetailsExchange(exchange: String): ExchangeDataEntity? {
+        return apiService.getDetailsExchange(exchange)
+            .firstOrNull()?.mapToEntity()
+    }
 }
