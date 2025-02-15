@@ -17,4 +17,5 @@
     <string name="volume_1mth_usd">volume1mthUsd: %1$s</string>
     <string name="rank">rank: %1$s</string>
     <string name="back">Back button</string>
+    <string name="tentar_novamente">Tentar Novamente</string>
 </resources>

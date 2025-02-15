@@ -26,7 +26,7 @@ import com.example.mb.data.model.ExchangeDataEntity
 import com.example.mb.ui.component.Loading
 import com.example.mb.ui.theme.Dimens
 import com.example.mb.viewmodel.ExchangeDetailsViewModel
-import com.example.mb.viewmodel.ExchangeViewAction
+import com.example.mb.viewmodel.ExchangeDetailsViewAction
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -43,15 +43,15 @@ fun ExchangeDetailScreen(
         viewModel.fetchExchangeDetails(exchange)
         viewModel.exchangeDetails.collect { event ->
             when (event) {
-                is ExchangeViewAction.Loading -> {
+                is ExchangeDetailsViewAction.Loading -> {
                     isLoading = event.status
                 }
 
-                is ExchangeViewAction.ErrorExchange -> {
+                is ExchangeDetailsViewAction.ErrorExchangeDetails -> {
                     isLoading = false
                 }
 
-                is ExchangeViewAction.OpenDetailsExchange -> {
+                is ExchangeDetailsViewAction.OpenDetailsExchangeDetails -> {
                     exchangeDetails = event.exchangeDetails
                 }
             }

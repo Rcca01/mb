@@ -14,27 +14,27 @@ class ExchangeDetailsViewModel @Inject constructor(
     private val repository: ExchangeRepository
 ) : ViewModel() {
 
-    private val _exchangeDetails = MutableSharedFlow<ExchangeViewAction>()
+    private val _exchangeDetails = MutableSharedFlow<ExchangeDetailsViewAction>()
     val exchangeDetails = _exchangeDetails.asSharedFlow()
 
     fun fetchExchangeDetails(exchange: String) {
         viewModelScope.launch {
-            sendAction(ExchangeViewAction.Loading(true))
+            sendAction(ExchangeDetailsViewAction.Loading(true))
             try {
                 val response = repository.getDetailsExchange(exchange)
                 if (response != null) {
-                    sendAction(ExchangeViewAction.OpenDetailsExchange(response))
+                    sendAction(ExchangeDetailsViewAction.OpenDetailsExchangeDetails(response))
                 } else {
-                    sendAction(ExchangeViewAction.ErrorExchange("Falha ao obter dados!"))
+                    sendAction(ExchangeDetailsViewAction.ErrorExchangeDetails("Falha ao obter dados!"))
                 }
-                sendAction(ExchangeViewAction.Loading(false))
+                sendAction(ExchangeDetailsViewAction.Loading(false))
             } catch (e: Exception) {
                 e.printStackTrace()
             }
         }
     }
 
-    private fun sendAction(action: ExchangeViewAction) = viewModelScope.launch {
+    private fun sendAction(action: ExchangeDetailsViewAction) = viewModelScope.launch {
         _exchangeDetails.emit(action)
     }
 }
