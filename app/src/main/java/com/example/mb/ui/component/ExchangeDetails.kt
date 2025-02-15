@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
 import com.example.mb.R
@@ -35,6 +36,7 @@ fun ExchangeDetails(
                 .fillMaxSize()
                 .padding(padding)
                 .padding(Dimens.MediumPadding)
+                .testTag("exchange_details")
         ) {
             Text(
                 text = stringResource(R.string.id, exchangeDetails.exchangeId),

@@ -29,6 +29,14 @@ android {
             "COIN_API_KEY",
             properties.getProperty("COIN_API_KEY") ?: ""
         )
+
+        testOptions {
+            packaging {
+                jniLibs {
+                    useLegacyPackaging = true
+                }
+            }
+        }
     }
 
     buildFeatures {
@@ -68,6 +76,8 @@ dependencies {
 
     // ViewModel com Compose
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+    implementation("androidx.navigation:navigation-testing:2.8.7")
+    androidTestImplementation(project(mapOf("path" to ":app")))
 
     // Para Debug
     debugImplementation("androidx.compose.ui:ui-tooling")
@@ -103,8 +113,13 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    androidTestImplementation("io.mockk:mockk-android:1.12.0")
 
     testImplementation("org.mockito:mockito-core:4.0.0")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
     testImplementation("io.mockk:mockk:1.12.0")
+
+    // Testes de Jetpack Compose
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.5.1")
+    debugImplementation("androidx.compose.ui:ui-test-manifest:1.5.1")
 }

@@ -1,5 +1,6 @@
 package com.example.mb.data.mapper
 
+import androidx.annotation.VisibleForTesting
 import com.example.mb.data.model.ExchangeDataEntity
 import com.example.mb.data.model.ExchangeDataResponse
 import java.text.NumberFormat
@@ -26,12 +27,14 @@ fun ExchangeDataResponse.mapToEntity() = ExchangeDataEntity(
     rank = rank.toString(),
 )
 
-private fun parseValueToUSA(usaValue: Double?): String {
+@VisibleForTesting(otherwise = VisibleForTesting.PRIVATE)
+internal fun parseValueToUSA(usaValue: Double?): String {
     val formatUSA = NumberFormat.getNumberInstance(Locale.US)
-    return formatUSA.format(usaValue)
+    return usaValue?.let { formatUSA.format(usaValue) } ?: formatUSA.format(0.0)
 }
 
-private fun parseData(dataValue: String): String{
+@VisibleForTesting(otherwise = VisibleForTesting.PRIVATE)
+internal fun parseData(dataValue: String): String {
     return try {
         // Definir o formato da data original (ISO 8601 com UTC)
         val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'", Locale.getDefault())
