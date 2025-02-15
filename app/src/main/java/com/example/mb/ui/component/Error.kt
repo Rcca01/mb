@@ -24,7 +24,7 @@ fun ErrorScreen(onRetry: () -> Unit, errorMessage: String) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(Dimens.MediumPadding)
+            .padding(Dimens.dimen16dp)
             .testTag("error_screen"),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
@@ -32,12 +32,12 @@ fun ErrorScreen(onRetry: () -> Unit, errorMessage: String) {
         Text(
             text = errorMessage,
             color = Color.Red,
-            fontSize = Dimens.MediumText,
+            fontSize = Dimens.dimenText18sp,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center
         )
 
-        Spacer(modifier = Modifier.height(Dimens.MediumPadding))
+        Spacer(modifier = Modifier.height(Dimens.dimen16dp))
 
         Button(onClick = onRetry) {
             Text(text = stringResource(R.string.tentar_novamente))

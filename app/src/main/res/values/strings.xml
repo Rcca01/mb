@@ -1,21 +1,21 @@
 <resources>
     <string name="app_name">MB</string>
     <string name="lista_de_exchanges">Lista de Exchanges</string>
-    <string name="id">ID: %1$s</string>
-    <string name="volume_1_day_usd">Volume 1 day USD: %1$s</string>
-    <string name="exchange_id">exchangeId: %1$s</string>
-    <string name="name">name: %1$s</string>
-    <string name="data_quote_start">dataQuoteStart: %1$s</string>
-    <string name="data_quote_end">dataQuoteEnd: %1$s</string>
-    <string name="data_orderbook_start">dataOrderBookStart: %1$s</string>
-    <string name="data_orderbook_end">dataOrderBookEnd: %1$s</string>
-    <string name="data_trade_start">dataTradeStart: %1$s</string>
-    <string name="data_trade_end">dataTradeEnd: %1$s</string>
-    <string name="data_symbols_count">dataSymbolsCount: %1$s</string>
-    <string name="volume_1hrs_usd">volume1hrsUsd: %1$s</string>
-    <string name="volume_1day_usd">volume1DayUsd: %1$s</string>
-    <string name="volume_1mth_usd">volume1mthUsd: %1$s</string>
-    <string name="rank">rank: %1$s</string>
+    <string name="id">ID:</string>
+    <string name="volume_1_day_usd">Volume 1 day USD:</string>
+    <string name="exchange_id">exchangeId:</string>
+    <string name="name">name:</string>
+    <string name="data_quote_start">dataQuoteStart:</string>
+    <string name="data_quote_end">dataQuoteEnd:</string>
+    <string name="data_orderbook_start">dataOrderBookStart:</string>
+    <string name="data_orderbook_end">dataOrderBookEnd:</string>
+    <string name="data_trade_start">dataTradeStart:</string>
+    <string name="data_trade_end">dataTradeEnd:</string>
+    <string name="data_symbols_count">dataSymbolsCount:</string>
+    <string name="volume_1hrs_usd">volume1hrsUsd:</string>
+    <string name="volume_1day_usd">volume1DayUsd:</string>
+    <string name="volume_1mth_usd">volume1mthUsd:</string>
+    <string name="rank">rank:</string>
     <string name="back">Back button</string>
     <string name="tentar_novamente">Tentar Novamente</string>
 </resources>

@@ -45,7 +45,6 @@ class ExchangeScreenTest {
 
     @Test
     fun testSuccessState() {
-        // Altera o fluxo para emular sucesso
         mockStateFlow.value = ExchangeViewAction.Success(
             listOf(
                 ExchangeDataEntity(
@@ -66,16 +65,13 @@ class ExchangeScreenTest {
             )
         )
 
-        // Verifica se o conteúdo do sucesso está sendo exibido
         composeTestRule.onNodeWithTag("listExchange").assertIsDisplayed()
     }
 
     @Test
     fun testErrorState() {
-        // Altera o fluxo para emular erro
         mockStateFlow.value = ExchangeViewAction.Error("Erro ao carregar dados")
 
-        // Verifica se a mensagem de erro é exibida
         composeTestRule.onNodeWithText("Erro ao carregar dados").assertIsDisplayed()
     }
 }
