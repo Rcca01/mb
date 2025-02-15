@@ -12,13 +12,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
 import com.example.mb.R
 import com.example.mb.data.model.ExchangeDataEntity
-import com.example.mb.ui.ExchangeItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ExchangeListScreen (
     navController: NavController,
-    exchanges: List<ExchangeDataEntity> = emptyList()
+    exchanges: List<ExchangeDataEntity>
 ) {
     Scaffold(
     topBar = {

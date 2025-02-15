@@ -1,4 +1,4 @@
-package com.example.mb.ui
+package com.example.mb.ui.component
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column

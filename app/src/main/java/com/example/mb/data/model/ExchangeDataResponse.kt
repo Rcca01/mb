@@ -15,5 +15,5 @@ data class ExchangeDataResponse(
     @SerializedName("volume_1hrs_usd") val volume1hrsUsd: Double?,
     @SerializedName("volume_1day_usd") val volume1DayUsd: Double?,
     @SerializedName("volume_1mth_usd") val volume1mthUsd: Double?,
-    @SerializedName("rank") val rank: Int?,
+    @SerializedName("rank") val rank: Int?
 )

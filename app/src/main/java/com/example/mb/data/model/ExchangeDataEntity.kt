@@ -13,5 +13,5 @@ data class ExchangeDataEntity(
     val volume1hrsUsd: String,
     val volume1DayUsd: String,
     val volume1mthUsd: String,
-    val rank: String,
+    val rank: String
 )
