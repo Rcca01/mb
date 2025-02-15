@@ -64,7 +64,7 @@ MB-APP é um aplicativo Android desenvolvido com **Jetpack Compose**, seguindo a
 ---
 
 ## 🛠 Melhorias Futuras
-- **Testes UI** – Realizar testes nos componentes de tela
+- **Testes UI** – Realizar testes nos itens de tela mais internos
 - **Filtros** – Aplicar filtro na tela inicial
 - **Refresh** – Aplicar um botão para atualizar a tela principal ou atualização automática.
 
