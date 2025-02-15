@@ -59,10 +59,7 @@ MB-APP é um aplicativo Android desenvolvido com **Jetpack Compose**, seguindo a
 ---
 
 ## 📱 Telas
-![Loading](assets/Screenshot_20250215_164838.png)
-![Lista das criptos](assets/Screenshot_20250215_164907.png)
-![Descricao das critptos](assets/Screenshot_20250215_164930.png)
-![Tela de erro](assets/Screenshot_20250215_165712.png)
+<img src="assets/Screenshot_20250215_164838.png" alt="Descrição" width="200"> <img src="assets/Screenshot_20250215_164907.png" alt="Descrição" width="200"> <img src="assets/Screenshot_20250215_164930.png" alt="Descrição" width="200"> <img src="assets/Screenshot_20250215_165712.png" alt="Descrição" width="200">
 
 ---
 
