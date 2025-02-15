@@ -17,7 +17,7 @@ MB-APP é um aplicativo Android desenvolvido com **Jetpack Compose**, seguindo a
 ### 🔹 **Arquitetura & Estado**
 - **MVVM (Model-View-ViewModel)** – Padrão arquitetural para separação de responsabilidades
 - **ViewModel** – Gerenciamento de ciclo de vida
-- **LiveData / StateFlow** – Gerenciamento de estados reativos
+- **StateFlow** – Gerenciamento de estados reativos
 
 ### 🔹 **Injeção de Dependência**
 - **Hilt (Dagger-Hilt)** – Framework para injeção de dependências
@@ -59,7 +59,9 @@ MB-APP é um aplicativo Android desenvolvido com **Jetpack Compose**, seguindo a
 ---
 
 ## 🛠 Melhorias Futuras
-
+- **Testes UI** – Realizar testes nos componentes de tela
+- **Filtros** – Aplicar filtro na tela inicial
+- **Refresh** – Aplicar um botão para atualizar a tela principal ou atualização automática.
 
 ---
 
